@@ -2,8 +2,8 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(#E5EAF5, #D0B0F4);
     height: 100%;
+    background: grey;
 }
 .Logo {
     height: 80px;
@@ -23,7 +23,7 @@ body {
     height: 100px;
     justify-content:space-between;
     width: calc(100vw - 30px);;
-    Background-color: #845bb3;
+    Background-color: #111212;
     position: fixed;
     z-index: 1;
     /*box-shadow: 0 10px 10px rgba(0,0,0,0.3);*/
@@ -47,10 +47,10 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #111111;
+    color: darkgrey;
     font-size: 15px;
     font-weight: bold;
-    border: solid black 2px;
+    border: solid #B88846 2px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.3);
     padding: 2px;
 }
@@ -68,10 +68,9 @@ body {
 /*CONTENT----------------------------------------------------------------------------------------------------------------*/
 .Container-content {
     display: flex;
-    background: linear-gradient(#E5EAF5, #D0B0F4);
     height: 100%;
     justify-content: center;
-    padding-top: 7em;
+    padding-bottom: 5em;
 }
 
 .Container-resum {
@@ -86,6 +85,20 @@ body {
     background:#494d5f;
     overflow: hidden;
     overflow-y: scroll;
+    text-align: center;
+}
+
+.consigne {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.lien-API a{
+    color: darkred;
+}
+
+.Texte p {
+    font-weight: bold;
 }
 
 .Container-resum::-webkit-scrollbar {
@@ -126,6 +139,7 @@ footer {
     padding-bottom: 20px;
     color: gray;
     position: absolute;
+    bottom: 0;
 }
 
 .footer-container {
@@ -155,4 +169,64 @@ footer {
     padding: 15px 0;
     text-align: center;
 }
+
+
 /*FOOTER-----------------------------------------------------------------------------------------------------------------*/
+/*RESPONSIVE-------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 320px){
+    html {
+        height: 100%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .Container-content {
+     padding-bottom: 0;
+    }
+
+    .Container-resum {
+    align-items: center;
+    }
+}
+/*
+@media screen and (max-width: 768px){
+    html {
+        height: 100%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .Container-content {
+        padding-bottom: 0;
+    }
+
+    .Container-resum {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    html {
+        height: 100%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .Container-content {
+        padding-bottom: 0;
+    }
+
+    .Container-resum {
+        align-items: center;
+    }
+}
+/*RESPONSIVE-------------------------------------------------------------------------------------------------------------*/
