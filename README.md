@@ -1,9 +1,6 @@
 # GroupieTracker_Barbesier_Axel
 
 
-Ce read me n'est pas terminer et risque de changer dans les jours a venir 
-
-
 # Golang/API/HTML : Recapitulatif 
 
 Le but de ce projet et d'heberger un site web en Golang et d'afficher des données ainsi que des images reccupérés directement depuis une API
